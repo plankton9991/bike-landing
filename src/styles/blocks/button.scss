@@ -9,11 +9,20 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 27px;
-  color: #1D1D1D;
+  color: #1d1d1d;
   cursor: pointer;
 
-  background: #FFFFFF;
+  background: #fff;
   border-radius: 40px;
+
+  &--tablet {
+    width: 60%;
+    margin: 0 auto;
+
+    @include onDesktop {
+      width: 100%;
+    }
+  }
 
   transition: all 0.3s;
 
@@ -26,7 +35,7 @@
   }
 
   &--primary {
-    border: 0px solid transparent;
+    border: 0 solid transparent;
 
     margin-bottom: 48px;
 
